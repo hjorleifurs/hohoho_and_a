@@ -14,4 +14,3 @@ FROM nginx
 COPY nginx.config /etc/nginx/conf.d/default.conf
 COPY --from=base build /usr/share/nginx/html
 
-TAG hjorleifur/hohoho_and_a:test
