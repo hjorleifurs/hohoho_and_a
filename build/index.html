@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Einföld vefsíða</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family: sans-serif;">
+  <h1>Bottle of rum</h1>
+
+  <p>You have: <span id="locationSpan"></span></p>
+
+  <p>Menu</p>
+  <ul>
+    <li><a href="/">Nothing</a></li>
+    <li><a href="/beer">Beer</a></li>
+    <li><a href="/rum">Rum</a></li>
+  </ul>
+
+  <script>
+    const span = document.querySelector('#locationSpan')
+    span.innerHTML = window.location.pathname
+  </script>
+</body>
+</html>
